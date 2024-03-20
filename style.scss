@@ -1,0 +1,241 @@
+$green: #6DFC56;
+$dark-green: #13390D;
+$white: #FFFFFF;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "IBM Plex Mono", monospace;
+    background-color: $green;
+    // width: 1440px;
+}
+
+
+
+a {
+    color: $dark-green;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+
+li {
+    list-style: none;
+}
+
+button {
+    line-height: 18.2px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+p {
+    color: #13390DB2;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-size: 6.4rem;
+    font-weight: 700;
+    color: $dark-green;
+}
+
+h2 {
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: $dark-green;
+}
+
+.center {
+    width: min(90vw, 1120px);
+    margin: auto;
+}
+
+    nav {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        ul {
+            display: flex;
+            column-gap: 50px;
+            a:hover {
+                color: rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+    .list {
+        display: flex;
+        column-gap: 50px;
+        align-items: center;
+        .link {
+            border: 1px solid $dark-green;
+            border-radius: 4px;
+            padding: 0.9em 1.72em;
+        }
+        .link:active {
+            border: none;
+            border-bottom: 2px solid $dark-green;
+            border-left: 2px solid $dark-green;
+        }
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    @media screen and (max-width:1100px) {
+        .image {
+            display: none;
+        }
+        body {
+            width: 100vw;
+        }
+    }
+    
+    @media screen and (max-width:740px) {
+        .ul {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        h1 {
+            font-size: 3.8rem;
+        }
+    }
+    
+    @media screen and (max-width:750px) {
+        .hamb_menu {
+            border: none;
+            background-color: $green;
+        }
+
+    }
+
+    @media screen and (min-width:750px) {
+          .hamb_menu {
+            display: none;
+          }
+    }
+
+    
+
+    section {
+        display: flex;
+    }
+
+    .image {
+        width: 694px;
+        height: 741px;
+        margin-right: -140px;
+        margin-bottom: -155px;
+
+        // background-image: url(./images/Fox.png);
+        // background-size: cover;
+        // position: absolute;
+        // left: 630px;
+        // top: 52px;
+    }
+
+    .text {
+        margin-top: 108px;
+        margin-bottom: 60px;
+        row-gap: 20px;
+    }
+
+    .just {
+        border: none;
+        background-color: $dark-green;
+        color: $white;
+        border-radius: 4px;
+        // padding: 21px 71px;
+        padding: 2.1rem 7.1rem;
+        margin-bottom: 60px;
+    }
+    .just:active {
+        border-bottom: 3px solid rgb(109, 109, 109);
+        border-left: 3px solid rgb(109, 109, 109);
+
+    }
+
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }
+    
+    dialog {
+          width: 70vw;
+          height: 78vh;
+          margin: 1vh auto;
+          border-radius: 8px;
+          border: none;
+          padding: 5px;
+          background-color: #76ca69;
+        ul {
+              display: inline-block;
+            row-gap: 10px;
+            li {
+                margin-inline: auto;
+                text-align: start;
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 5px;
+                width: 200px;
+                padding: 10px;
+                margin-bottom: 10px;
+                a {
+                    margin-inline: auto;
+                    text-transform: capitalize;
+                    color: var(white);
+                    font-size: 2.2rem;
+                  }  
+                  a:active {
+                    color: var(--gray);
+                  }  
+            }
+          }
+        }
+
+
+        dialog::backdrop {
+          background-color: rgba(0, 0, 0, 0.6);
+        }
+
+
+    // .hamb_menu {
+    //     button {
+    //         background-color: none;
+    //         border: none;
+    //     }
+    // }
